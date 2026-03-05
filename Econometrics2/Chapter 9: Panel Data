@@ -1,0 +1,18 @@
+ECONOMETRICS WITH PANEL DATA
+
+1. Definition
+Panel data: the same groups of observation (N) (household, enterprise, individuals, countries…) are observed over time (T)
+The panel data can have: 
+  – Variable has different values for each obs, but does not change overtime (location, gender..) 
+  – Variable has different values for each obs, but change overtime (exchange rate, FDI, consumption, income..)
+
+2. Advantages of Panel Data
+  • Overcome the problem of missing unobserved variables  
+  • The data (units) are observed overtime, so the sample is larger and we can track all the changes of units overtime.
+
+3. Econometric Model for Panel Data 
+Depends on the characteristics of ai, we have 
+3 models: 
+  – Pooled OLS (Mô hình hồi qui gộp - POLS) 
+  – Fixed effect (Mô hình tác động cố định - FE) 
+  – Random effect (Mô hình tác động ngẫu nhiên-RE)
