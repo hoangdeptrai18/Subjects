@@ -16,3 +16,28 @@ Depends on the characteristics of ai, we have
   – Pooled OLS (Mô hình hồi qui gộp - POLS) 
   – Fixed effect (Mô hình tác động cố định - FE) 
   – Random effect (Mô hình tác động ngẫu nhiên-RE)
+
+Các câu lệnh thực hiện trong STATA
+Bước 1: cần test để xem nên chọn RE/FE hoặc POLS. 
+ Breusch-Pagan test for the significant difference 
+across units. 
+H0: no significant difference across units (no panel 
+effect) [không tồn tại] 
+H1: significant difference across units (panel effect) [có 
+tồn tại] 
+xtset [panel variable] [time variable] 
+Xtreg Y X, re 
+Xttest0 
+p-value < 0.05 -> bác bỏ  H0, chấp nhận H1 -> RE/FE 
+p-value > 0.05 -> chấp nhận H0 -> POLS
+
+Nếu trong Bước 1, H0 bị bác bỏ -> HAUSMAN TEST để 
+chọn FE or RE 
+H0: Cov(ai,xit) = 0 
+H1: Cov(ai,xit) ≠ 0 
+xtreg Y X, fe 
+est store fe 
+xtreg Y X, re 
+hausman fe 
+• Nếu p-value < 0.05 -> bác bỏ H0 -> chọn FE 
+• Nếu p-value > 0.05 -> chấp nhận H0 -> choose RE
