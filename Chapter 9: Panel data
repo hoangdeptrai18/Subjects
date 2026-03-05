@@ -1,0 +1,9 @@
+ECONOMETRICS WITH PANEL DATA
+
+1. Definition
+Panel data: the same groups of observation (N) (household, enterprise, individuals, countries…) are observed over time (T)
+The panel data can have: 
+  – Variable has different values for each obs, but does not change overtime (location, gender..) 
+  – Variable has different values for each obs, but change overtime (exchange rate, FDI, consumption, income..)
+
+2. Advantages of Panel Data
