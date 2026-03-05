@@ -7,3 +7,5 @@ The panel data can have:
   – Variable has different values for each obs, but change overtime (exchange rate, FDI, consumption, income..)
 
 2. Advantages of Panel Data
+  • Overcome the problem of missing unobserved variables  
+  • The data (units) are observed overtime, so the sample is larger and we can track all the changes of units overtime.
